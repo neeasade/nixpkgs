@@ -12812,7 +12812,7 @@ with pkgs;
 
   bspwm = callPackage ../applications/window-managers/bspwm { };
 
-  bspwm-unstable = callPackage ../applications/window-managers/bspwm/unstable.nix { };
+  #bspwm-unstable = callPackage ../applications/window-managers/bspwm/unstable.nix { };
 
   bvi = callPackage ../applications/editors/bvi { };
 
@@ -15215,6 +15215,9 @@ with pkgs;
     conf = config.st.conf or null;
     patches = config.st.patches or null;
   };
+
+  xst = callPackage ../applications/misc/xst {};
+  colort = callPackage ../applications/misc/colort {};
 
   st-wayland = callPackage ../applications/misc/st/wayland.nix {
     conf = config.st.conf or null;
