@@ -10,10 +10,8 @@ in stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner   = "neeasade";
     repo    = "xst";
-
-  rev= "11407c1d7c5053c4471a2d4354e604d7a3955772";
-  sha256= "1f3xbj5zjb5d5c558kh2jj92vghyvxmiqspwmfg382zc0kcaxins";
-
+    rev= "a32b4452762af7d744af711780277a6002617eec";
+    sha256= "12xllmnw4lpbswnqi83hjj82vfa6qfy9biaaqp3f1x51d8lgms22";
   };
 
   buildInputs = [ pkgconfig libX11 ncurses libXext libXft fontconfig ];
