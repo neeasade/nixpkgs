@@ -5,10 +5,10 @@ stdenv.mkDerivation rec {
   version = "1.0";
 
   src = fetchFromGitHub {
-    owner = "wmutils";
+    owner = "neeasade";
     repo = "opt";
-    rev = "v${version}";
-    sha256 = "0gd05qsir1lnzfrbnfh08qwsryz7arwj20f886nqh41m87yqaljz";
+    rev = "c904c152bad6afd3a076e4de42a2e5c11eb1b469";
+    sha256 = "05g0h1y6prv3dqlysf04a1ph90f5yy47gr924ssi7pv57r0z39d0";
   };
 
   buildInputs = [ libxcb ];
@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
   installFlags = [ "PREFIX=$(out)" ];
 
   meta = with stdenv.lib; {
-    description = "Optional addons to wmutils";
+    description = "neeasade's border opt";
     homepage = https://github.com/wmutils/opt;
     license = licenses.isc;
     maintainers = with maintainers; [ vifino ];
