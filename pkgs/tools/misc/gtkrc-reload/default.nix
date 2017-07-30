@@ -13,8 +13,9 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ pkgconfig gtk2 ];
 
-  #makeFlags = [ "prefix=$(out)" ];
-  installFlags = [ "DESTDIR=$(out)" "PREFIX=$(out)" ];
+   installPhase = ''
+     make install PREFIX=$out
+   '';
 
   meta = with stdenv.lib; {
     description = "Utility for reloading gtk2 program themes";
