@@ -1936,6 +1936,8 @@ with pkgs;
 
   glxinfo = callPackage ../tools/graphics/glxinfo { };
 
+  gtkrc-reload = callPackage ../tools/misc/gtkrc-reload { };
+
   gmvault = callPackage ../tools/networking/gmvault { };
 
   gnaural = callPackage ../applications/audio/gnaural {
