@@ -6,8 +6,8 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner   = "baskerville";
     repo    = "bspwm";
-    rev     =  "9ce48c468ba161eccf605b9070dbfe51f74d6d82";
-    sha256  = "00a005rdkx8225zzljl772b1gdy1s2ip7krsi8g8bajvk30a4k4i";
+    rev     =  "41dc94f63c1001be9716bc19228bf2c91eba68c8";
+    sha256  = "1bawbl15w4qnjcn5lm22mlx65rmcmfnyfdykn9638n5yww0942kf";
   };
 
   buildInputs = [ libxcb libXinerama xcbutil xcbutilkeysyms xcbutilwm ];
